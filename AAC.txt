@@ -1,0 +1,36 @@
+1,Aug 30 2018,7:00 PM,Thu,(21) Central Florida,56,@,Connecticut,17,,Pratt & Whitney Stadium at Rentschler Field - East Hartford Connecticut
+2,Sep 8 2018,3:30 PM,Sat,Navy,22,,Memphis,21,,Navy-Marine Corps Memorial Stadium - Annapolis Maryland
+3,Sep 20 2018,7:30 PM,Thu,Temple,31,,Tulsa,17,,Lincoln Financial Field - Philadelphia Pennsylvania
+4,Sep 22 2018,8:00 PM,Sat,South Florida,20,,East Carolina,13,,Raymond James Stadium - Tampa Florida
+5,Sep 22 2018,12:00 PM,Sat,Southern Methodist,31,,Navy,30,,Gerald J. Ford Stadium - Dallas Texas
+6,Sep 28 2018,8:00 PM,Fri,Tulane,40,,Memphis,24,,Yulman Stadium - New Orleans Louisiana
+7,Sep 29 2018,3:30 PM,Sat,Cincinnati,49,@,Connecticut,7,,Pratt & Whitney Stadium at Rentschler Field - East Hartford Connecticut
+8,Oct 4 2018,8:00 PM,Thu,Houston,41,,Tulsa,26,,TDECU Stadium - Houston Texas
+9,Oct 6 2018,7:00 PM,Sat,(12) Central Florida,48,,Southern Methodist,20,,Spectrum Stadium - Orlando Florida
+10,Oct 6 2018,12:00 PM,Sat,Cincinnati,37,,Tulane,21,,Nippert Stadium - Cincinnati Ohio
+11,Oct 6 2018,7:00 PM,Sat,Memphis,55,,Connecticut,14,,Liberty Bowl Memorial Stadium - Memphis Tennessee
+12,Oct 6 2018,12:00 PM,Sat,Temple,49,,East Carolina,6,,Lincoln Financial Field - Philadelphia Pennsylvania
+13,Oct 12 2018,7:01 PM,Fri,(23) South Florida,25,@,Tulsa,24,,Skelly Field at H.A. Chapman Stadium - Tulsa Oklahoma
+14,Oct 13 2018,3:30 PM,Sat,(10) Central Florida,31,@,Memphis,30,,Liberty Bowl Memorial Stadium - Memphis Tennessee
+15,Oct 13 2018,7:00 PM,Sat,Houston,42,@,East Carolina,20,,Dowdy-Ficklen Stadium - Greenville North Carolina
+16,Oct 13 2018,3:30 PM,Sat,Temple,24,@,Navy,17,,Navy-Marine Corps Memorial Stadium - Annapolis Maryland
+17,Oct 20 2018,7:00 PM,Sat,(10) Central Florida,37,@,East Carolina,10,,Dowdy-Ficklen Stadium - Greenville North Carolina
+18,Oct 20 2018,3:30 PM,Sat,Houston,49,@,Navy,36,,Navy-Marine Corps Memorial Stadium - Annapolis Maryland
+19,Oct 20 2018,7:00 PM,Sat,(21) South Florida,38,,Connecticut,30,,Raymond James Stadium - Tampa Florida
+20,Oct 20 2018,3:30 PM,Sat,Southern Methodist,27,@,Tulane,23,,Yulman Stadium - New Orleans Louisiana
+21,Oct 20 2018,12:00 PM,Sat,Temple,24,,(20) Cincinnati,17,,Lincoln Financial Field - Philadelphia Pennsylvania
+22,Oct 27 2018,3:30 PM,Sat,Cincinnati,26,@,Southern Methodist,20,,Gerald J. Ford Stadium - Dallas Texas
+23,Oct 27 2018,3:30 PM,Sat,Houston,57,,(21) South Florida,36,,TDECU Stadium - Houston Texas
+24,Oct 27 2018,7:00 PM,Sat,Tulane,24,@,Tulsa,17,,Skelly Field at H.A. Chapman Stadium - Tulsa Oklahoma
+25,Nov 1 2018,7:30 PM,Thu,(9) Central Florida,52,,Temple,40,,Spectrum Stadium - Orlando Florida
+26,Nov 3 2018,3:30 PM,Sat,Cincinnati,42,,Navy,0,,Nippert Stadium - Cincinnati Ohio
+27,Nov 3 2018,12:00 PM,Sat,Memphis,59,@,East Carolina,41,,Dowdy-Ficklen Stadium - Greenville North Carolina
+28,Nov 3 2018,7:00 PM,Sat,Southern Methodist,45,,(17) Houston,31,,Gerald J. Ford Stadium - Dallas Texas
+29,Nov 3 2018,3:30 PM,Sat,Tulane,41,@,South Florida,15,,Raymond James Stadium - Tampa Florida
+30,Nov 3 2018,7:00 PM,Sat,Tulsa,49,,Connecticut,19,,Skelly Field at H.A. Chapman Stadium - Tulsa Oklahoma
+31,Nov 10 2018,12:00 PM,Sat,(11) Central Florida,35,,Navy,24,,Spectrum Stadium - Orlando Florida
+32,Nov 10 2018,7:00 PM,Sat,(25) Cincinnati,35,,South Florida,23,,Nippert Stadium - Cincinnati Ohio
+33,Nov 10 2018,12:00 PM,Sat,Memphis,47,,Tulsa,21,,Liberty Bowl Memorial Stadium - Memphis Tennessee
+34,Nov 10 2018,12:00 PM,Sat,Southern Methodist,62,@,Connecticut,50,,Pratt & Whitney Stadium at Rentschler Field - East Hartford Connecticut
+35,Nov 10 2018,7:00 PM,Sat,Temple,59,@,Houston,49,,TDECU Stadium - Houston Texas
+36,Nov 10 2018,4:00 PM,Sat,Tulane,24,,East Carolina,18,,Yulman Stadium - New Orleans Louisiana
