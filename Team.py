@@ -11,6 +11,12 @@ class Team:
         self.wins = []
         self.losses = []
 
+    def __str__(self):
+        return f"{self.name} ({self.num_wins}-{self.num_losses}) - {self.ELO}"
+
+    def __repr__(self):
+        return f"Team({self.name})"
+
     def add_win(self, match_obj):
         self.num_wins += 1
         self.matches.append(match_obj)
