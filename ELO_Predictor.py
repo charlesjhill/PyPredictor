@@ -1,12 +1,18 @@
 import re
-from EloPredictor import EloPredictor
+from EloPredictor import EloPredictor as EP
 from Game import Game
 from Team import Team
+from ParamOptimizer import ParamOptimizer as PO
 
 
 def remove_rank(string):
     regex = r"\(\d*\)\s"
     return re.sub(regex, "", string, 0, re.MULTILINE)
+
+
+def print_teams(teams_list):
+    for idx, team in enumerate(sorted(teams_list, key=lambda t: t.ELO, reverse=True)):
+        print(f"{idx + 1}. {team}")
 
 
 # Load data from file into structure
@@ -52,10 +58,17 @@ while dataLine != '':
     dataLine = f.readline()
 f.close()
 
-# Begin processing every match-up
+# Filter list to remove teams with 1 or 2 games (FCS schools)
+teams = {k: v for k, v in teams.items() if v.get_num_games() > 8}
+games = [g for g in games if
+         g.get_teams()[0] in teams.values() and g.get_teams()[1] in teams.values()]
 
+# Update ELO using every FBS v. FBS match-up
+
+ep = EP(games)
 for game in games:
-    EloPredictor.update_teams_elo(game)
+    ep.update_teams_elo(game)
 
-for idx, team in enumerate(sorted(teams.values(), key=lambda t: t.ELO, reverse=True)):
-    print(f"{idx + 1}. {team.name} - {team.ELO}")
+print_teams(teams.values())
+
+ep.get_performance_info()
