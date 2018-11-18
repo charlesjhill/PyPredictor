@@ -11,3 +11,9 @@ class Game:
 
     def get_teams(self):
         return [self.winner, self.loser]
+
+    def __repr__(self):
+        return f"Game({self.winner}, {self.loser})"
+
+    def __str__(self):
+        return f"{self.winner} {self.win_score} - {self.loser} {self.lose_score}"
