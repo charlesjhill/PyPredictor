@@ -696,3 +696,69 @@
 696,12,Nov 10 2018,3:00 PM,Sat,Virginia,45,,Liberty,24,,Scott Stadium - Charlottesville Virginia
 697,12,Nov 10 2018,3:30 PM,Sat,(10) Washington State,31,@,Colorado,7,,Folsom Field - Boulder Colorado
 698,12,Nov 10 2018,12:00 PM,Sat,(7) West Virginia,47,,Texas Christian,10,,Mountaineer Field at Milan Puskar Stadium - Morgantown West Virginia
+699,13,Nov 13 2018,6:00 PM,Tue,Ball State,42,,Western Michigan,41,,Scheumann Stadium - Muncie Indiana
+700,13,Nov 14 2018,8:00 PM,Wed,Miami (OH),13,@,Northern Illinois,7,,Huskie Stadium - DeKalb Illinois
+701,13,Nov 14 2018,7:00 PM,Wed,Ohio,52,,Buffalo,17,,Peden Stadium - Athens Ohio
+702,13,Nov 15 2018,8:00 PM,Thu,Houston,48,,Tulane,17,,TDECU Stadium - Houston Texas
+703,13,Nov 15 2018,9:30 PM,Thu,North Texas,41,,Florida Atlantic,38,,Apogee Stadium - Denton Texas
+704,13,Nov 15 2018,6:00 PM,Thu,Toledo,56,@,Kent State,34,,Dix Stadium - Kent Ohio
+705,13,Nov 16 2018,9:00 PM,Fri,(23) Boise State,45,@,New Mexico,14,,Dreamstyle Stadium - Albuquerque New Mexico
+706,13,Nov 16 2018,9:00 PM,Fri,Memphis,28,@,Southern Methodist,18,,Gerald J. Ford Stadium - Dallas Texas
+707,13,Nov 17 2018,12:00 PM,Sat,(1) Alabama,50,,Citadel,17,,Bryant-Denny Stadium - Tuscaloosa Alabama
+708,13,Nov 17 2018,2:30 PM,Sat,Appalachian State,45,,Georgia State,17,,Kidd Brewer Stadium - Boone North Carolina
+709,13,Nov 17 2018,3:00 PM,Sat,Arkansas State,31,,Louisiana-Monroe,17,,Centennial Bank Stadium - Jonesboro Arkansas
+710,13,Nov 17 2018,12:00 PM,Sat,Army,28,,Colgate,14,,Michie Stadium - West Point New York
+711,13,Nov 17 2018,4:00 PM,Sat,Auburn,53,,Liberty,0,,Jordan-Hare Stadium - Auburn Alabama
+712,13,Nov 17 2018,3:30 PM,Sat,Bowling Green State,21,@,Akron,6,,InfoCision Stadium - Akron Ohio
+713,13,Nov 17 2018,10:15 PM,Sat,Brigham Young,45,,New Mexico State,10,,LaVell Edwards Stadium - Provo Utah
+714,13,Nov 17 2018,8:00 PM,Sat,(11) Central Florida,38,,(19) Cincinnati,13,,Spectrum Stadium - Orlando Florida
+715,13,Nov 17 2018,7:00 PM,Sat,(2) Clemson,35,,Duke,6,,Clemson Memorial Stadium - Clemson South Carolina
+716,13,Nov 17 2018,7:00 PM,Sat,East Carolina,55,,Connecticut,21,,Dowdy-Ficklen Stadium - Greenville North Carolina
+717,13,Nov 17 2018,12:00 PM,Sat,(15) Florida,63,,Idaho,10,,Ben Hill Griffin Stadium - Gainesville Florida
+718,13,Nov 17 2018,2:00 PM,Sat,Florida International,42,@,Charlotte,35,,Jerry Richardson Stadium - Charlotte North Carolina
+719,13,Nov 17 2018,3:30 PM,Sat,Florida State,22,,(22) Boston College,21,,Doak Campbell Stadium - Tallahassee Florida
+720,13,Nov 17 2018,10:30 PM,Sat,Fresno State,23,,San Diego State,14,,Bulldog Stadium - Fresno California
+721,13,Nov 17 2018,4:00 PM,Sat,(5) Georgia,66,,Massachusetts,27,,Sanford Stadium - Athens Georgia
+722,13,Nov 17 2018,5:00 PM,Sat,Georgia Southern,41,@,Coastal Carolina,17,,Brooks Stadium - Conway South Carolina
+723,13,Nov 17 2018,3:30 PM,Sat,Georgia Tech,30,,Virginia,27,,Bobby Dodd Stadium - Atlanta Georgia
+724,13,Nov 17 2018,11:00 PM,Sat,Hawaii,35,,Nevada-Las Vegas,28,,Aloha Stadium - Honolulu Hawaii
+725,13,Nov 17 2018,3:30 PM,Sat,Iowa,63,@,Illinois,0,,Memorial Stadium - Champaign Illinois
+726,13,Nov 17 2018,3:30 PM,Sat,Kansas State,21,,Texas Tech,6,,Bill Snyder Family Stadium - Manhattan Kansas
+727,13,Nov 17 2018,12:00 PM,Sat,(20) Kentucky,34,,Middle Tennessee State,23,,Kroger Field - Lexington Kentucky
+728,13,Nov 17 2018,5:00 PM,Sat,Louisiana,48,,South Alabama,38,,Cajun Field - Lafayette Louisiana
+729,13,Nov 17 2018,7:30 PM,Sat,(10) Louisiana State,42,,Rice,10,,Tiger Stadium - Baton Rouge Louisiana
+730,13,Nov 17 2018,2:30 PM,Sat,Marshall,23,,Texas-San Antonio,0,,Joan C. Edwards Stadium - Huntington West Virginia
+731,13,Nov 17 2018,3:30 PM,Sat,Miami (FL),38,@,Virginia Tech,14,,Lane Stadium - Blacksburg Virginia
+732,13,Nov 17 2018,4:00 PM,Sat,(4) Michigan,31,,Indiana,20,,Michigan Stadium - Ann Arbor Michigan
+733,13,Nov 17 2018,12:00 PM,Sat,(25) Mississippi State,52,,Arkansas,6,,Davis Wade Stadium - Starkville Mississippi
+734,13,Nov 17 2018,3:30 PM,Sat,Missouri,50,@,Tennessee,17,,Neyland Stadium - Knoxville Tennessee
+735,13,Nov 17 2018,3:30 PM,Sat,Navy,37,,Tulsa,29,,Navy-Marine Corps Memorial Stadium - Annapolis Maryland
+736,13,Nov 17 2018,12:00 PM,Sat,Nebraska,9,,Michigan State,6,,Memorial Stadium - Lincoln Nebraska
+737,13,Nov 17 2018,3:00 PM,Sat,Nevada,21,@,San Jose State,12,,CEFCU Stadium - San Jose California
+738,13,Nov 17 2018,3:00 PM,Sat,North Carolina,49,,Western Carolina,26,,Kenan Memorial Stadium - Chapel Hill North Carolina
+739,13,Nov 17 2018,12:20 PM,Sat,North Carolina State,52,@,Louisville,10,,Cardinal Stadium - Louisville Kentucky
+740,13,Nov 17 2018,12:00 PM,Sat,(24) Northwestern,24,@,Minnesota,14,,TCF Bank Stadium - Minneapolis Minnesota
+741,13,Nov 17 2018,2:30 PM,Sat,(3) Notre Dame,36,,(12) Syracuse,3,,Yankee Stadium - New York New York
+742,13,Nov 17 2018,12:00 PM,Sat,(9) Ohio State,52,@,Maryland,51,,Capital One Field at Maryland Stadium - College Park Maryland
+743,13,Nov 17 2018,7:30 PM,Sat,(6) Oklahoma,55,,Kansas,40,,Gaylord Family - Oklahoma Memorial Stadium - Norman Oklahoma
+744,13,Nov 17 2018,3:30 PM,Sat,Oklahoma State,45,,(7) West Virginia,41,,Boone Pickens Stadium - Stillwater Oklahoma
+745,13,Nov 17 2018,2:00 PM,Sat,Old Dominion,77,,Virginia Military Institute,14,,Foreman Field at S.B. Ballard Stadium - Norfolk Virginia
+746,13,Nov 17 2018,10:30 PM,Sat,Oregon,31,,Arizona State,29,,Autzen Stadium - Eugene Oregon
+747,13,Nov 17 2018,12:00 PM,Sat,(16) Penn State,20,@,Rutgers,7,,High Point Solutions Stadium - Piscataway New Jersey
+748,13,Nov 17 2018,12:00 PM,Sat,Pittsburgh,34,@,Wake Forest,13,,BB&T Field - Winston-Salem North Carolina
+749,13,Nov 17 2018,7:30 PM,Sat,South Carolina,49,,Chattanooga,9,,Williams-Brice Stadium - Columbia South Carolina
+750,13,Nov 17 2018,3:30 PM,Sat,Southern Mississippi,21,,Louisiana Tech,20,,M. M. Roberts Stadium - Hattiesburg Mississippi
+751,13,Nov 17 2018,12:00 PM,Sat,Temple,27,,South Florida,17,,Lincoln Financial Field - Philadelphia Pennsylvania
+752,13,Nov 17 2018,8:00 PM,Sat,(13) Texas,24,,(18) Iowa State,10,,Darrell K Royal-Texas Memorial Stadium - Austin Texas
+753,13,Nov 17 2018,7:00 PM,Sat,Texas A&M,41,,Alabama-Birmingham,20,,Kyle Field - College Station Texas
+754,13,Nov 17 2018,12:00 PM,Sat,Texas Christian,16,@,Baylor,9,,McLane Stadium - Waco Texas
+755,13,Nov 17 2018,3:30 PM,Sat,Troy,12,,Texas State,7,,Veterans Memorial Stadium - Troy Alabama
+756,13,Nov 17 2018,3:30 PM,Sat,UCLA,34,,Southern California,27,,Rose Bowl - Pasadena California
+757,13,Nov 17 2018,1:30 PM,Sat,(21) Utah,30,@,Colorado,7,,Folsom Field - Boulder Colorado
+758,13,Nov 17 2018,2:00 PM,Sat,(14) Utah State,29,@,Colorado State,24,,Sonny Lubrick Field at Canvas Stadium - Fort Collins Colorado
+759,13,Nov 17 2018,7:30 PM,Sat,Vanderbilt,36,,Mississippi,29,,Vanderbilt Stadium - Nashville Tennessee
+760,13,Nov 17 2018,4:30 PM,Sat,(17) Washington,42,,Oregon State,23,,Husky Stadium - Seattle Washington
+761,13,Nov 17 2018,10:30 PM,Sat,(8) Washington State,69,,Arizona,28,,Martin Stadium - Pullman Washington
+762,13,Nov 17 2018,7:30 PM,Sat,Western Kentucky,40,,Texas-El Paso,16,,Houchens Industries-L.T. Smith Stadium - Bowling Green Kentucky
+763,13,Nov 17 2018,3:30 PM,Sat,Wisconsin,47,@,Purdue,44,,Ross-Ade Stadium - West Lafayette Indiana
+764,13,Nov 17 2018,4:00 PM,Sat,Wyoming,35,,Air Force,27,,Jonah Field War Memorial Stadium - Laramie Wyoming
