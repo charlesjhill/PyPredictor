@@ -78,20 +78,8 @@ games = [g for g in games if
 
 # Update ELO using every FBS v. FBS match-up
 ep = EP(games)
-for game in games:
-    ep.update_teams_elo(game)
+ep.rank_regress_rank(games, teams)
 
-# Regress the info to get "priors"
-for team in teams.values():
-    EP.regress_elo(team)
-
-# Update the ELO's using these "priors"
-for game in games:
-    ep.update_teams_elo(game)
-
-print_teams_csv(teams.values())
+print_teams(teams.values())
 
 ep.get_performance_info()
-
-# from ParamOptimizer import ParamOptimizer as PO
-# PO.minimize_abs_err_no_bias(games, teams)
