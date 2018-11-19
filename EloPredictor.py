@@ -3,9 +3,11 @@ from Team import Team
 
 
 class EloPredictor:
-    hfa_adjustment = 1.3  # prev. 5.8
-    elo2pts_conv = 30.0     # 23
-    bias_adjust = 7    # +7.94
+    hfa_adjustment = 3.5
+    k_factor =       16
+    mov_fact =       0.7
+    elo2pts_conv =   25.0
+    bias_adjust =    0
 
     def __init__(self, games):
         self.games = games
@@ -39,16 +41,13 @@ class EloPredictor:
     def update_teams_elo(g):
         def get_update_fact(elo_w, elo_l, marg, k_fact):
             init_fact = k_fact * log(marg + 1)
-            mov_mult = 2.2 / ((elo_w - elo_l) * 0.001 + 2.2)
+            mov_mult = EloPredictor.mov_fact / ((elo_w - elo_l) * 0.001 + EloPredictor.mov_fact)
             return init_fact * mov_mult
 
-        if g.winner.get_num_games() > 2:
-            k = 20
-        else:
-            k = 32
+        k = EloPredictor.k_factor
         adjustment_factor = get_update_fact(g.winner.ELO, g.loser.ELO, g.get_margin(), k)
-        g.winner.ELO += adjustment_factor
-        g.loser.ELO -= adjustment_factor
+        g.winner.ELO = round(g.winner.ELO + adjustment_factor)
+        g.loser.ELO = round(g.loser.ELO - adjustment_factor)
 
     @staticmethod
     def get_exp_margin(g):
@@ -65,4 +64,4 @@ class EloPredictor:
 
     @staticmethod
     def regress_elo(t):
-        t.ELO = (t.ELO - Team.default_rating) / 3 + Team.default_rating
+        t.ELO = 2 * (t.ELO - Team.default_rating) / 3 + Team.default_rating
