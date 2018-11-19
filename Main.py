@@ -80,6 +80,8 @@ games = [g for g in games if
 ep = EP(games)
 ep.rank_regress_rank(games, teams)
 
-print_teams(teams.values())
-
+print_teams_csv(teams.values())
 ep.get_performance_info()
+
+# from ParamOptimizer import ParamOptimizer as PO
+# PO.optimize_regression_factor(games, teams)
