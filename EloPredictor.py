@@ -65,3 +65,12 @@ class EloPredictor:
     @staticmethod
     def regress_elo(t):
         t.ELO = 2 * (t.ELO - Team.default_rating) / 3 + Team.default_rating
+
+    @staticmethod
+    def rank_regress_rank(games, teams):
+        for g in games:
+            EloPredictor.update_teams_elo(g)
+        for t in teams.values():
+            EloPredictor.regress_elo(t)
+        for g in games:
+            EloPredictor.update_teams_elo(g)
