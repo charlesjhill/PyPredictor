@@ -3,11 +3,13 @@ from Team import Team
 
 
 class EloPredictor:
-    hfa_adjustment = 3.5
-    k_factor =       16
-    mov_fact =       0.7
-    elo2pts_conv =   25.0
-    bias_adjust =    0
+    hfa_adjustment =    3.5
+    k_factor =          16
+    mov_fact =          0.7  # TODO: Rename this to something else
+    elo2pts_conv =      25
+    bias_adjust =       6.62
+    rating_scalar =     0
+    regression_factor = 1.6
 
     def __init__(self, games):
         self.games = games
@@ -39,15 +41,13 @@ class EloPredictor:
 
     @staticmethod
     def update_teams_elo(g):
-        def get_update_fact(elo_w, elo_l, marg, k_fact):
-            init_fact = k_fact * log(marg + 1)
-            mov_mult = EloPredictor.mov_fact / ((elo_w - elo_l) * 0.001 + EloPredictor.mov_fact)
-            return init_fact * mov_mult
+        mov_factor = log(g.get_margin() + 1)
+        rating_adjustment = EloPredictor.mov_fact / ((g.winner.ELO - g.loser.ELO) * 0.001 + EloPredictor.mov_fact)
+        k = EloPredictor.k_factor + EloPredictor.rating_scalar * ((g.winner.ELO + g.loser.ELO) / 2)
 
-        k = EloPredictor.k_factor
-        adjustment_factor = get_update_fact(g.winner.ELO, g.loser.ELO, g.get_margin(), k)
-        g.winner.ELO = round(g.winner.ELO + adjustment_factor)
-        g.loser.ELO = round(g.loser.ELO - adjustment_factor)
+        adjustment = k * rating_adjustment * mov_factor
+        g.winner.ELO = round(g.winner.ELO + adjustment)
+        g.loser.ELO = round(g.loser.ELO - adjustment)
 
     @staticmethod
     def get_exp_margin(g):
@@ -64,7 +64,7 @@ class EloPredictor:
 
     @staticmethod
     def regress_elo(t):
-        t.ELO = 2 * (t.ELO - Team.default_rating) / 3 + Team.default_rating
+        t.ELO =  (t.ELO - Team.default_rating) / EloPredictor.regression_factor + Team.default_rating
 
     @staticmethod
     def rank_regress_rank(games, teams):
