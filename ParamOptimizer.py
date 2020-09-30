@@ -1,5 +1,6 @@
 from EloPredictor import EloPredictor as EP
-from Team import Team
+from Models.Team import Team
+from Models.Season import Season
 
 
 class ParamOptimizer:
@@ -43,24 +44,24 @@ class ParamOptimizer:
         print(f"MoV Factor: {min_mov}")
 
     @staticmethod
-    def minimize_abs_err_no_bias(g_list, t_dict):
-        ep = EP(g_list)
+    def minimize_abs_err_no_bias(season: Season):
+        """Iterate over MoV, K, and HFA"""
+        ep = EP(season)
         min_err = 100
 
         # Iterate over the two parameters: k_factor and hta
-        for mov_fact in [x / 10.0 for x in range(7, 41, 1)]: # 5 to 40
+        for mov_fact in [x / 10.0 for x in range(1, 21, 1)]: # 0.1 to 2.0
             EP.mov_fact = mov_fact
-            for k_fact in range(10, 41):  # 10 to 40
+            for k_fact in range(5, 41):  # 10 to 40
                 EP.k_factor = k_fact
                 # reset team rankings
-                for v in t_dict.values():
-                    v.ELO = Team.default_rating
+                season.reset_team_elos()
 
                 # RRR:
-                EP.rank_regress_rank(g_list, t_dict)
+                ep.rank_regress_rank()
 
                 # Check different hfa-values to minimize error
-                for hfa_adj in [x / 10.0 for x in range(0, 51, 1)]:  # 0 to 50
+                for hfa_adj in [x / 10.0 for x in range(0, 51, 1)]:  # 0.0 to 5.0
                     EP.hfa_adjustment = hfa_adj
                     calc_err = ep.get_abs_error()
                     if calc_err < min_err:
@@ -113,30 +114,20 @@ class ParamOptimizer:
         print(f"MoV value: {min_mov}")
 
     @staticmethod
-    def optimize_rating_scalar(g_list, t_dict):
-        ep = EP(g_list)
+    def optimize_rating_scalar(season: Season):
+        ep = EP(season)
         min_err = 100
 
-        for k in [x for x in range(10, 41)]:
+        for k in [x for x in range(5, 16)]:
             EP.k_factor = k
 
-            for rs in [x / 10000.0 for x in range(-10000, 1, 1)]: # 10001 values on [-1, 1] in steps of 1/10000
+            for rs in [x / 1000.0 for x in range(0, 1000, 1)]: # 10001 values on [-1, 1] in steps of 0.001
                 EP.rating_scalar = rs
                 # Reset rankings
-                for v in t_dict.values():
-                    v.ELO = Team.default_rating
+                season.reset_team_elos()
 
                 # Rank
-                for g in g_list:
-                    EP.update_teams_elo(g)
-
-                # Regress
-                for t in t_dict.values():
-                    EP.regress_elo(t)
-
-                # Rank
-                for g in g_list:
-                    EP.update_teams_elo(g)
+                ep.rank_regress_rank()
 
                 err = ep.get_abs_error()
                 if err < min_err:
@@ -151,27 +142,15 @@ class ParamOptimizer:
         print(f"K value: {min_k}s")
 
     @staticmethod
-    def optimize_regression_factor(g_list, t_dict):
-        ep = EP(g_list)
+    def optimize_regression_factor(season: Season):
+        ep = EP(season)
         min_err = 100
 
-        for rf in [x / 10.0 for x in range(10, 1001, 1)]:
+        for rf in [x / 100.0 for x in range(0, 100, 1)]:  # 0 to 1, in steps of 0.01
             EP.regression_factor = rf
             # Reset rankings
-            for v in t_dict.values():
-                v.ELO = Team.default_rating
-
-            # Rank
-            for g in g_list:
-                EP.update_teams_elo(g)
-
-            # Regress
-            for t in t_dict.values():
-                EP.regress_elo(t)
-
-            # Rank
-            for g in g_list:
-                EP.update_teams_elo(g)
+            season.reset_team_elos()
+            ep.rank_regress_rank()
 
             err = ep.get_abs_error()
             if err < min_err:
